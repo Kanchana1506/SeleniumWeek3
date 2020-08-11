@@ -1,17 +1,31 @@
-package week3.day1.assignment;
+package week3.day2.classroom;
 
-public class Desktop extends Computer {
+public class Desktop implements HardWare, Software {
 
-	public void desktopsize()
-	{
-		System.out.println("desktop size is 1200px");
+	public void softwareResources() {
+		System.out.println("software resources from software interface");
+		
 	}
+
+	public void hardwareResoures() {
+		System.out.println("hardware resources from hardware interface");
+		
+	}
+	
+	public void desktopModel()
+	{
+		System.out.println("desktop model from desktop class");
+	}
+	
 	
 	public static void main(String[] args) {
 		Desktop obj = new Desktop();
-		obj.computerModel();
-		obj.desktopsize();
+		obj.softwareResources();
+		obj.hardwareResoures();
+		obj.desktopModel();
 
 	}
+
+	
 
 }

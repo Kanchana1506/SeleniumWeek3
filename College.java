@@ -1,25 +1,20 @@
-package week3.day1.assignment;
+package week3.day2.classroom;
 
-public class College {
-	
-	public void collegeName()
-	{
-		System.out.println("college name is UDIT");
-	}
-	
-	public void colegeCode()
-	{
-		System.out.println("college code is 1001");
-	}
-	
-	public void collegeRank()
-	{
-		System.out.println("college rank is 5th");
+public class College extends University {
+
+	public void ug() {
+	System.out.println("ug course defined in college class - unimplemented method");
+		
 	}
 
+	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		College obj = new College();
+		obj.pg();
+		obj.ug();
 
 	}
 
+	
+	
 }
